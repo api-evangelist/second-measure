@@ -1,8 +1,27 @@
 aid: second-measure
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/second-measure.png
 name: Second Measure
-description: 'Second Measure is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: cloud. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Bloomberg Second Measure provides alternative data analytics for investors,
+  turning billions of anonymized U.S. consumer card-transaction purchases into daily
+  insights on the performance of thousands of public and private companies and brands.
+  It is a Bloomberg product delivered primarily through the Bloomberg Terminal (ALTD
+  and ECAN commands) and via aggregated and transaction-level data feeds, with 2-, 3-,
+  and 7-day delivery lags that support intra-quarter earnings forecasting and investment
+  monitoring. Second Measure was founded as a Bessemer Venture Partners portfolio company
+  and acquired by Bloomberg in 2020. As of this enrichment pass the company exposes no
+  public developer API, developer portal, or machine-readable API specification; access
+  is gated through Bloomberg data products rather than a self-serve web API.'
 url: https://raw.githubusercontent.com/api-evangelist/second-measure/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Cloud
+- Alternative Data
+- Analytics
+- Consumer Insights
+- Financial Data
+- Transaction Data
+- Bloomberg
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,18 @@ maintainers:
 common:
 - type: Website
   url: https://secondmeasure.com/
+- type: Blog
+  url: https://secondmeasure.com/datapoints/
+- type: PrivacyPolicy
+  url: https://secondmeasure.com/privacy-policy/
+- type: TermsOfService
+  url: https://secondmeasure.com/tos/
+- type: DomainSecurity
+  url: security/second-measure-domain-security.yml
+- type: WellKnown
+  url: well-known/second-measure-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
