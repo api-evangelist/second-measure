@@ -12,16 +12,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/second-measure.png
 name: Second Measure
-description: 'Bloomberg Second Measure provides alternative data analytics for investors,
-  turning billions of anonymized U.S. consumer card-transaction purchases into daily
-  insights on the performance of thousands of public and private companies and brands.
-  It is a Bloomberg product delivered primarily through the Bloomberg Terminal (ALTD
-  and ECAN commands) and via aggregated and transaction-level data feeds, with 2-, 3-,
-  and 7-day delivery lags that support intra-quarter earnings forecasting and investment
-  monitoring. Second Measure was founded as a Bessemer Venture Partners portfolio company
-  and acquired by Bloomberg in 2020. As of this enrichment pass the company exposes no
-  public developer API, developer portal, or machine-readable API specification; access
-  is gated through Bloomberg data products rather than a self-serve web API.'
+description: Bloomberg Second Measure provides alternative data analytics for investors, turning billions of anonymized
+  U.S. consumer card-transaction purchases into daily insights on the performance of thousands of public and private
+  companies and brands. It is a Bloomberg product delivered primarily through the Bloomberg Terminal (ALTD and ECAN
+  commands) and via aggregated and transaction-level data feeds, with 2-, 3-, and 7-day delivery lags that support
+  intra-quarter earnings forecasting and investment monitoring. Second Measure was founded as a Bessemer Venture
+  Partners portfolio company and acquired by Bloomberg in 2020. As of this enrichment pass the company exposes no
+  public developer API, developer portal, or machine-readable API specification; access is gated through Bloomberg
+  data products rather than a self-serve web API.
 url: https://raw.githubusercontent.com/api-evangelist/second-measure/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-27'
 tags:
 - Company
 - Cloud
@@ -48,6 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/bloomberg/
+  name: Bloomberg
+  x-relationship: acquisition
+  x-generated-by: bloomberg-family:2026-08-27
+  x-acquired: 2020
 - type: Website
   url: https://secondmeasure.com/
 - type: Blog
@@ -65,3 +69,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 2
   pass: local-v1
+x-parent: bloomberg
+x-relationship: acquisition
+x-acquired: 2020
